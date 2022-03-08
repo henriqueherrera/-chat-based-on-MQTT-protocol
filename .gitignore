@@ -53,3 +53,6 @@ dkms.conf
 
 build
 build/
+
+paho.mqtt.c
+paho.mqtt.c/

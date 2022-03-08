@@ -3,23 +3,17 @@ project(Chat-based-on-MQTT-protocol C)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 set (CMAKE_C_STANDARD 99)
 
+add_library(sources
+  src/terminal.c
+)
+
 include_directories(include)
 
-add_executable(CHAT app/main.c)
-add_executable(PUB app/mqtt_pub.c)
-add_executable(SUB app/mqtt_sub.c)
+add_executable(Chat app/chat.c)
 
-target_link_libraries(CHAT
+target_link_libraries(Chat
+  sources
   pthread
-  mosquitto
-)
-
-target_link_libraries(PUB
+  paho-mqtt3as
   pthread
-  mosquitto
-)
-
-target_link_libraries(SUB
-  pthread
-  mosquitto
 )
