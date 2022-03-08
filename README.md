@@ -40,29 +40,33 @@ The project is structured as follows:
 
 ## Instructions
 
-To clone and compile the repository you need to:
+To clone you need to:
+
+```sh
+git clone https://github.com/henriqueherrera/Chat-based-on-MQTT-protocol
+```
 
 To install packages
 
 #### PACKAGES
 
 ```sh
+cd Chat-based-on-MQTT-protocol
 sudo chmod +x run_paho.sh
 sudo ./run_paho.sh
 ```
 
+To compile you need to
 #### GNU Make
 
 ```sh
-git clone https://github.com/henriqueherrera/Chat-based-on-MQTT-protocol
-cd Chat-based-on-MQTT-protocol && mkdir build && cd build && cmake ../ && make -j
+mkdir build && cd build && cmake ../ && make -j
 ```
 
 #### Ninja
 
 ```sh
-git clone https://github.com/henriqueherrera/Chat-based-on-MQTT-protocol
-cd router-simulation && mkdir build && cd build && cmake .. -G "Ninja"
+mkdir build && cd build && cmake .. -G "Ninja"
 ninja
 ```
 
