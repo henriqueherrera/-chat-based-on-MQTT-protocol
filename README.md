@@ -42,6 +42,15 @@ The project is structured as follows:
 
 To clone and compile the repository you need to:
 
+To install packages
+
+#### PACKAGES
+
+```sh
+sudo chmod +x run_paho.sh
+sudo ./run_paho.sh
+```
+
 #### GNU Make
 
 ```sh
@@ -62,5 +71,5 @@ ninja
 Finally, after following the previous steps, to run the project, in the build folder, execute the following command:
 
 ```
-./CHAT
+./Chat
 ```
