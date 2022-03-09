@@ -5,6 +5,8 @@ set (CMAKE_C_STANDARD 99)
 
 add_library(sources
   src/terminal.c
+  src/mqtt-client.c
+  src/global.c
 )
 
 include_directories(include)
@@ -15,5 +17,4 @@ target_link_libraries(Chat
   sources
   pthread
   paho-mqtt3as
-  pthread
 )

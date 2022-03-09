@@ -3,4 +3,4 @@
 #include <global.h>
 #include <stdio.h>
 
-extern void terminal_headers();
+extern void *terminal_headers(void *vargp);

@@ -12,8 +12,11 @@ else
 fi
 
 sudo apt update
+sudo apt  install cmake 
 sudo apt install mosquitto
 sudo apt install mosquitto-clients
+
+sudo apt-get install libssl-dev
 
 git clone https://github.com/eclipse/paho.mqtt.c.git
 cd paho.mqtt.c
