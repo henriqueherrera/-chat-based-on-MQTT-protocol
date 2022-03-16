@@ -16,17 +16,21 @@ void *terminal_headers(void *vargp) {
   printf("************\nChat MQTT\n************");
   
   while (option != 10) {
-    erase();
+    //erase();
     printf("\n1 - Enviar uma mensagem para um Tópico \n");
+    printf("2 - Inscrever-se em um Tópico \n");
+
     printf("\nSelecione uma opção: ");
     scanf("%d", &option);
 
     switch (option)
     {
       case 1:
-        sendMessage();
+        inputMessage();
         break;
-
+      case 2:
+        inputSubscribe();
+        break;
       default:
         break;
     }

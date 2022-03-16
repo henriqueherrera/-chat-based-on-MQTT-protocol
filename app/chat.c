@@ -22,8 +22,6 @@ int main(int argc, char *argv[]) {
   
   pthread_join(thread_id, NULL);
   pthread_join(thread_id_2, NULL);
-  /*  */
-
   
   return 0;
 }
