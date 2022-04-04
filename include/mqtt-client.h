@@ -1,3 +1,1 @@
-#pragma once
-
-extern int start_client();
+extern int execute_chat();

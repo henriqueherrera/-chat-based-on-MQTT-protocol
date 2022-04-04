@@ -5,8 +5,10 @@ set (CMAKE_C_STANDARD 99)
 
 add_library(sources
   src/terminal.c
-  src/mqtt-client.c
+  src/flow.c
   src/global.c
+  src/funcs.c
+  src/mqtt-client.c
 )
 
 include_directories(include)
